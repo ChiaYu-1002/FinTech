@@ -1,0 +1,167 @@
+* {
+  	box-sizing: border-box;
+}
+
+
+#rectangle {
+    position: top;
+    /*width: 1560px;*/
+    height: 150px;
+    left: 0px;
+    top: 0px;
+
+    background: #007C7D;
+}
+
+#Logo {
+    position: absolute;
+    width: 300px;
+    
+    left: 38px;
+    top: 30px;
+
+}
+
+#logo_text {
+    position: absolute;
+    width: 350px;
+    
+    left: 350px;
+    top: 70px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+#EN {
+            position: absolute;
+            width: 40px;
+            
+            left: 1000px;
+            top: 100px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 47px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.05em;
+            font-family: "Microsoft JhengHei";
+            color: #FFFFFF;
+
+}
+
+
+#logout {
+            position: absolute;
+            width: 70px;
+            
+            left: 1100px;
+            top: 103px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 46px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.05em;
+
+            color: #FFF6F6;
+}
+
+
+#criteria {
+            position: absolute;
+            width: 130px;
+            height: 60px;
+            left: 30px;
+            top: 180px;
+
+            background: #43B7BE;
+            border-radius: 15px;
+
+            font-family: "Microsoft JhengHei";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 63px;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+
+}
+
+
+
+#text {
+            position: absolute;
+            width: 1000px;
+            height: 63px;
+            left: 165px;
+            top: 180px;
+
+            font-family: "Microsoft JhengHei";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+}
+
+
+#rec_info {
+            width: 450px;
+            
+
+            box-sizing: border-box;
+            border-radius: 15px;
+}
+
+
+table {
+            position: absolute;
+            
+            
+            left: 150px;
+            top: 300px;
+
+}
+
+
+button {
+            position: absolute;
+            width: 165px;
+            height: 60px;
+            left: 950px;
+            top: 180px;
+
+
+            background: #a9d18e85;
+            border-radius: 12px;
+            border: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 42px;
+            text-align: center;
+}

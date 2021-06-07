@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+    <link rel="stylesheet" href="css/styles_search.css">
+
+    <style>
+        
+        input.area {
+            width: 200px;
+            height: 36px;
+            border: 1px solid #8b8d8d;
+            background: #8b8d8d;
+            border-radius: 15px;
+            font-size: 36px;
+            font-weight: 700;
+            font-family: "Microsoft JhengHei";
+        }
+
+        label.top {
+            position: absolute;
+            width: 500px;
+            height: 46px;
+            left: 65px;
+            top: 337px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 80px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+
+        }
+
+        
+
+        /**checkbox*/
+        input[type=checkbox] {
+            margin-right: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 15px;
+            height: 15px;
+            position: relative;
+            vertical-align: middle
+        }
+
+        /**checkbox*/
+        input[type=checkbox]:after {
+            position: absolute;
+            width: 10px;
+            height: 15px;
+            top: 0;
+            content: " ";
+            background-color: #62f58eef;
+            color: rgb(36, 33, 33);
+            display: inline-block;
+            visibility: visible;
+            padding: 0px 3px;
+            border-radius: 3px;
+            vertical-align: middle
+        }
+
+        /**checkbox*/
+        input[type=checkbox]:checked:after {
+            content: "✓";
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="rectangle"></div>
+    <img id="Logo" src="台壽.png"></div>
+    <label class=top id=logo_text>業務員搜尋平台</label>
+    <label class=top id=EN>EN</label>
+    <label class=top id=logout onclick="javascript:location.href='../login/index.html'">登出</label>
+    <form>
+        <div id="rectangle2"> </div>
+        <input class=search>
+        <img id="magnifier" src="magnifier.png" onclick="javascript:location.href='../result/index.html'">
+        <!-- <label>性別:</n>地區:</n>服務客群年齡:</n>地區:</label> -->
+        <div id="panel">
+            <div class="row"><label>性別:</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    男</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    女</label>
+
+                <!-- 換行用 -->
+                <label for="male">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+                <label for="male">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+                <label for="male">&nbsp &nbsp &nbsp &nbsp </label>
+                <!-- 換行用 -->
+
+            </div>
+            <div class="row">
+                <span>地區:</span>
+                <label>縣市</label>
+                <input class=area type="text" id="縣市" name="area">
+                <label>地區</label>
+                <input class=area type="text" id="地區" name="area">
+
+
+            </div>
+            <div class="row"><span>服務客群年齡:</span>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    20~30</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    30~40</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    40~50</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    50~60</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    60以上</label>
+                <!-- <input type="radio" id="20" name="age" value="20-30">
+                <label for="20">20~30</label>
+                <input type="radio" id="30" name="age" value="30-40">
+                <label for="30">30~40</label>
+                <input type="radio" id="40" name="age" value="40-50">
+                <label for="40">40~50</label>
+                <input type="radio" id="50" name="age" value="50-60">
+                <label for="50">50~60</label>
+                <input type="radio" id="60" name="age" value="60-">
+                <label for="male">60以上</label> -->
+            </div>
+            <div class="row"><span>顧客客群年收:</span>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    100萬以下</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    100~200萬</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    200~300萬</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    300萬以上</label>
+                <!-- <input type="radio" id="0" name="revenue" value="0">
+                <label for="0">100萬以下</label>
+                <input type="radio" id="100" name="revenue" value="100">
+                <label for="100">100~200萬</label>
+                <input type="radio" id="200" name="revenue" value="200">
+                <label for="200">200~300萬</label>
+                <input type="radio" id="300" name="revenue" value="300">
+                <label for="300">300萬以上</label> -->
+            </div>
+            <div class="row"><span>保單數量:</span>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    15張以下</label>
+
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    15~30張</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    30以上</label>
+                <!-- <input type="radio" id="00" name="unit" value="0">
+                <label for="00">15張以下</label>
+                <input type="radio" id="15" name="unit" value="15">
+                <label for="15">15~30張</label>
+                <input type="radio" id="30" name="unit" value="30">
+                <label for="30">30張以上</label> -->
+            </div>
+
+            <div class="row"><span>聯絡時間:</span>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    皆可</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    上午(9:00~12:00)</label>
+                <label><input type="checkbox">
+                    <span class="checkmark"></span>
+                    下午(14:00~18:00)</label>
+                <!-- <input type="radio" id="all" name="time" value="all">
+                <label for="all">皆可</label>
+                <input type="radio" id="AM" name="time" value="AM">
+                <label for="AM">上午(9:00~12:00)</label>
+                <input type="radio" id="PM" name="time" value="PM">
+                <label for="PM">下午(14:00~18:00)</label> -->
+            </div>
+        </div>
+    </form>
+    <button type="button" onclick="javascript:location.href='../result/index.html'">送出</button>
+</body>
+
+</html>
